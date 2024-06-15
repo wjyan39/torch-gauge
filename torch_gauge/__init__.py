@@ -6,3 +6,6 @@ __version__ = get_versions()["version"]
 del get_versions
 
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+from . import _version
+__version__ = _version.get_versions()['version']
